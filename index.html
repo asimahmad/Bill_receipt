@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant Bill</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="main-tab-area">
+        <div class="tabs">
+
+            <!--Tab navbar start-->
+            <div class="tab-header">
+                <div class="nav-icon">
+                    <i class="far fa-calendar-check"></i>
+                </div>
+                <div class="nav-icon active">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="nav-icon">
+                    <i class="far fa-address-book"></i>
+                </div>
+            </div>
+            <!--Tab navbar close-->
+
+            <!--Tab indicater start-->
+            <div class="tab-indicater"></div>
+            <!--Tab indicater close-->
+
+            <!--Tab content start-->
+            <div class="tab-content">
+
+                <!--1st item-->
+                <div class="tab">
+                    <i class="far fa-calendar-check"></i>
+                    <h2>Timing</h2>
+                    <p>
+                        SimpleText is the native text editor for the Apple classic Mac OS. SimpleText allows text editing and text formatting, fonts, and sizes. It was developed to integrate the features included in the different versions of TeachText that were created by various software development groups within Apple. 
+                    </p>
+                </div>
+                <!--1st item close-->
+
+                <!--2nd item-->
+                 <div class="tab active">
+                    <i class="fas fa-utensils"></i>
+                    <h3>The Great Table</h3>
+                        <select name="days" id="day" style="width: 60px; border: white;">
+                            <option value="today">Today</option>
+                            <option value="yesterday">Yesterday</option>
+                            <option value="day before yesterday">Day before yesterday</option>
+                          </select>
+                          <div class="wrapper">
+                            <div>
+                              
+                                <div class="bill-tabs">
+                                    <div class="bill-tabs-header">
+                                        <div class="active" style="border-left: 1px solid black;">Drinks</div>
+                                        <div>Food</div>
+                                        <div style="border-right: 1px solid black;">Dessert</div>
+                                    </div>
+
+                                    <div class="bill-tab-content">
+                                        <div class="active">
+                                            <select name="wines" id="wine" style="width: 600px; height: 30px; border: 1px solid black;">
+                                            <option value="wine">Wine</option>
+                                            <option value="water">Water</option>
+                                            <option value="Mocktails">Mocktails</option>
+                                            </select>
+
+                                            <div class="cards">
+                                                <div class="card">ONE</div>
+                                                <div class="card">TWO</div>
+                                                <div class="card">THREE</div>
+                                                <div class="card">FOUR</div>
+                                                <div class="card">FIVE</div>
+                                                <div class="card">SIX</div>
+                                              </div>
+                                        </div>
+                                        <div>
+                                            <h2>Food</h2>
+                                            <p>
+                                                SimpleText is the native text editor for the Apple classic Mac OS. SimpleText allows text editing and text formatting, fonts, and sizes. It was developed to integrate the features included in the different versions of TeachText that were created by various software development groups within Apple. 
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <h2>Dessert</h2>
+                                            <p>
+                                                SimpleText is the native text editor for the Apple classic Mac OS. SimpleText allows text editing and text formatting, fonts, and sizes. It was developed to integrate the features included in the different versions of TeachText that were created by various software development groups within Apple. 
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="bill-receipt">Two</div>
+                          </div>
+                </div>
+                <!--2nd item close-->
+
+                 <!--3rd item-->
+                 <div class="tab">
+                    <i class="far fa-address-book"></i>
+                    <h2>Contact</h2>
+                    <p>
+                        SimpleText is the native text editor for the Apple classic Mac OS. SimpleText allows text editing and text formatting, fonts, and sizes. It was developed to integrate the features included in the different versions of TeachText that were created by various software development groups within Apple. 
+                    </p>
+                </div>
+                <!--3rd item close-->
+
+            </div>
+            <!--Tab content close-->
+        </div>
+    </div>
+</body>
+</html>

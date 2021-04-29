@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #ddd;
+}
+
+.main-tab-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1100px;
+    height: 640px;
+    padding: 30px 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px #ccc;
+    overflow: hidden;
+}
+
+.tabs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1050px;
+    height: 600px;
+    padding: 30px 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px #ccc;
+    overflow: hidden; 
+}
+
+.tabs .tab-header{
+    float: left;
+    width: 80px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    padding: 50px 0;
+}
+
+.tabs .tab-header .nav-icon{
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    color: #888;
+    padding-left: 45px;
+    padding-top: 100px;
+}
+
+.tabs .tab-header > div.nav-icon:hover,
+.tabs .tab-header > div.active{
+    color: #8500ed;
+}
+
+
+.tab-indicater{
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background-color: #8500ed;
+    top: 275px;
+    transform: all 500ms ease-in;
+} 
+.tab-content{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-content div.tab{
+    position: absolute;
+    text-align: center;
+    height: 50px;
+    transition: 500ms ease-in-out;
+    top: 200%;
+}
+
+.tab-content div.active{
+    top: 0;
+}
+
+.tab-content div.tab i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.tab-content div.tab h2, p{
+    padding: 10px 30px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 600px 300px;
+    height: 600px;
+    border: #ccc;
+  }
+
+
+  .bill-tabs{
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 650px;
+      margin-top: 5px;
+  }
+
+  .bill-tabs .bill-tabs-header{
+      display: flex;
+      height: 80px;
+  }
+
+  .bill-tabs .bill-tabs-header > div{
+      position: relative;
+      width: calc(100%/3);
+      height: 60%;
+      line-height: 60px;
+      font-weight: 600;
+      color: black;
+      cursor: pointer;
+      z-index: 2;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+  }
+
+  .bill-tabs .bill-tabs-header > div::before{
+      content: "";
+      position: absolute ;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: 0;
+      background: #ddd;
+      z-index: -1;
+  }
+
+  .bill-tabs .bill-tabs-header > div:hover::before{
+      transition: all 300ms ease-in-out;
+      height: 5%;
+  }
+
+  .bill-tabs .bill-tabs-header > div.active{
+      background-color: rgb(56, 53, 53);
+      color: white;
+  }
+  
+  .bill-tabs .bill-tabs-header > div.active::after{
+    color: rgb(236, 91, 91);
+    height: 100%;
+}
+
+.bill-tabs .bill-tab-content{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.bill-tabs .bill-tab-content > div{
+    position: absolute;
+    text-align: center;
+    height: 50px;
+    transition: 500ms ease-in-out;
+    top: 200%;
+    
+}
+
+.bill-tabs .bill-tab-content > div.active{
+    top: 0;
+}
+
+
+
+
+.card {
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem;
+    height: 100px;
+  }
+  
+  .cards {
+    width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    padding-top: 20px;
+  }
+  
+  /* Screen larger than 600px? 2 column */
+  @media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+
+
+  .bill-receipt{
+      background: #888;
+      margin-left: 10px;
+  }
+
+
+
